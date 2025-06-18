@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/shan376/ansible-jenkins-demo2.git'
+                git branch: 'main', url: 'https://github.com/shan376/ansible-jenkins-demo2.git'
             }
         }
         stage('Deploy Nginx via Ansible') {
